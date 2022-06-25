@@ -1,0 +1,38 @@
+.relatedVideoSide{
+    width: 32.4%;
+    padding-top: 21px;
+    box-sizing: border-box;
+}
+.relatedVideoSide__category{
+    width: 90%;
+}
+.relatedVideoSide__category > p {
+    height: 7px;
+}
+.videoRow{
+    display: flex;
+    align-items: flex-start;
+    height: 93px;
+}
+.videoRow__video{
+    height: 100%;
+}
+.videoRow__video > img {
+    object-fit: cover;
+    width: 167px;
+    height: 100%;
+}
+.videoRow__text > h4{
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.videoRow__text > p{
+    font-size: 12px;
+    color: #606060;
+    line-height: 18px;
+}
+.relatedVideoSide__link{
+    text-decoration: none;
+}

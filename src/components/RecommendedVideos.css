@@ -1,0 +1,17 @@
+.recommendedVideos{
+    position: relative;
+    left: 17.5%;
+    width: 82%;
+    background-color: #f9f9f9;
+}
+
+.recommendedVideos__videos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 22px 23px;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+.recommendedVideos__link{
+    text-decoration: none;
+}

@@ -1,0 +1,17 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 17.5%;
+    padding: 10px 15px 10px 0px;
+    background-color: #fff;
+    position: fixed;
+    left: 0%;
+    box-sizing: border-box;
+}
+.sidebar > hr{
+    height: 1px;
+    border: 0;
+    background-color: lightgrey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

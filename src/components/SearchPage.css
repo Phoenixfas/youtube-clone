@@ -1,0 +1,29 @@
+.searchPage{
+    position: relative;
+    left: 17.5%;
+    width: 82%;
+    background-color: #f9f9f9;
+    padding: 20px 25px;
+    box-sizing: border-box;
+}
+.searchPage__filter{
+    display: flex;
+    align-items: center;
+    color: #606060;
+    font-size: xx-small !important;
+}
+.searchPage__filter > h2{
+    margin-left: 10px;
+}
+.searchPage > hr{
+    height: 1px;
+    border: 0;
+    background-color: lightgrey;
+    margin-top: 10px;
+}
+.searchPage > h4{
+    font-weight: 500;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
