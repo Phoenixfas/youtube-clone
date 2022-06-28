@@ -1,16 +1,15 @@
 .recommendedVideos{
-    position: relative;
-    left: 17.5%;
-    width: 82%;
+    flex: 5;
     background-color: #f9f9f9;
 }
 
 .recommendedVideos__videos{
     display: flex;
     flex-wrap: wrap;
-    padding: 22px 23px;
+    padding: 22px 24px;
     padding-right: 0;
     padding-bottom: 0;
+    justify-content: space-evenly;
 }
 .recommendedVideos__link{
     text-decoration: none;

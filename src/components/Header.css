@@ -14,6 +14,9 @@
     flex: 1;
     margin-right: 15px;
 }
+.header__sidebarToggle{
+    cursor: pointer;
+}
 .header__logo{
     height: 20px;
     object-fit: contain;

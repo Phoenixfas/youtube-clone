@@ -1,13 +1,30 @@
 .sidebar{
+    flex: 1.1;
+    position: sticky;
+    left: 0;
+    top: 56px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    width: 17.5%;
-    padding: 10px 15px 10px 0px;
+    padding: 11px 0px 10px 0px;
     background-color: #fff;
-    position: fixed;
-    left: 0%;
     box-sizing: border-box;
+    visibility: visible;
+    opacity: 1;
+    transition: flex 0.3s ease-in;
 }
+.sidebar.hidden{
+    flex: 0;
+    transition: flex 0.3s ease-out;
+}
+/* @keyframes hideSidebar{
+    0%{
+        flex: 1;
+    }
+    100%{
+        flex: 0;
+    }
+} */
 .sidebar > hr{
     height: 1px;
     border: 0;

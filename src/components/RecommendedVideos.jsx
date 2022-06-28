@@ -1,21 +1,14 @@
+import moment from "moment";
 import Categories from "./Categories";
 import "./RecommendedVideos.css";
 import VideoCard from "./VideoCard";
 import {Link} from "react-router-dom"
 
 function RecommendedVideos({videos}) {
-  // const shorten = (text, maxLength) => {
-  //   return text.length > maxLength ? text.substr(0, maxLength) : text;
-  // }
-  // const toStr = (num) => {
-  //   return num.toString()
-  // }
+  
   const dateCon = (date) => {
     const dateObj = new Date(date)
-    const month = dateObj.getMonth() + 1
-    const day = dateObj.getDate()
-    const year = dateObj.getFullYear()
-    return year - new Date().getFullYear() === 0 ? `${12 - month} months ago`: year - new Date().getFullYear() > 0 ? `${year - new Date().getFullYear()} years ago` : `${30 - day} days ago`
+    return moment(dateObj).fromNow()
   }
 
   // const view = (id) => {
@@ -38,12 +31,13 @@ function RecommendedVideos({videos}) {
           {videos.map((video) => (
             <Link to={`/watch/${video.id.videoId}/${video.snippet.title}`} key={video.id.videoId} className="recommendedVideos__link" >
               <VideoCard 
+                  id={video.id.videoId}
                   title={video.snippet.title}
                   channel={video.snippet.channelTitle}
-                  // views={`${video.statistics.viewCount > 1000000 ? shorten(toStr(video.statistics.viewCount/1000000), 4) + "M" : video.statistics.viewCount > 1000 ? shorten(toStr(video.statistics.viewCount/1000), 4) + "K" : video.statistics.viewCount } views`}
                   timestamp={dateCon(video.snippet.publishedAt)}
                   image={video.snippet.thumbnails.medium.url}
                   channelImage={video.snippet.thumbnails.medium.url}
+                  view={video.views}
               />
             </Link>
             ))}

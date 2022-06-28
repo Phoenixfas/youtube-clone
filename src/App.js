@@ -4,27 +4,26 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
 import VideoPlayer from "./pages/VideoPlayer";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
+import videos from "./sampleData/videos";
 
 function App() {
-  const [videos, setVideos] = useState([]);
+  // const [videos, setVideos] = useState([]);
 
-  // https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&maxResults=25&chart=mostPopular&regionCode=US&key=AIzaSyDSjpO42J6lBkm_IckY0tO0KXyY26SvTts
-
-  useEffect(() => {
-    fetch(
-      "https://youtube.googleapis.com/youtube/v3/search?part=snippet&contentDetails&statistics&channelId=UCydlocDyvRtFmMffKytKqgQ&maxResults=25&type=video&key=AIzaSyDSjpO42J6lBkm_IckY0tO0KXyY26SvTts",
-      {
-        method: "GET",
-        headers: {
-          Authorization: "AIzaSyDSjpO42J6lBkm_IckY0tO0KXyY26SvTts",
-          Accept: "application/json",
-        },
-      }
-    )
-      .then((res) => res.json())
-      .then((json) => setVideos(json.items));
-  }, []);
+  // useEffect(() => {
+  //   fetch(
+  //     "https://youtube.googleapis.com/youtube/v3/search?part=snippet&contentDetails&statistics&channelId=UCydlocDyvRtFmMffKytKqgQ&maxResults=24&type=video&key=AIzaSyDSjpO42J6lBkm_IckY0tO0KXyY26SvTts",
+  //     {
+  //       method: "GET",
+  //       headers: {
+  //         Authorization: "AIzaSyDSjpO42J6lBkm_IckY0tO0KXyY26SvTts",
+  //         Accept: "application/json",
+  //       },
+  //     }
+  //   )
+  //     .then((res) => res.json())
+  //     .then((json) => setVideos(json.items));
+  // }, []);
 
   return (
     <div className="app">

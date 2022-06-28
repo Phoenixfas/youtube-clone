@@ -1,10 +1,14 @@
 import "./Sidebar.css"
 import SidebarRow from "./SidebarRow"
 import {Home, Whatshot, ExploreOutlined, SubscriptionsOutlined, VideoLibraryOutlined, History , OndemandVideo, WatchLaterOutlined, ThumbUpAltOutlined, ExpandMoreOutlined} from "@mui/icons-material"
+import { useSelector } from "react-redux"
 
 function Sidebar() {
+
+  const { value } = useSelector((state) => state.sidebarToggler)
+
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${value ? '' : 'hidden'}`}>
         <SidebarRow selected Icon={Home} title="Home" />
         <SidebarRow Icon={ExploreOutlined} title="Explore" />
         <SidebarRow Icon={Whatshot} title="Trending" />

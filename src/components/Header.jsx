@@ -3,15 +3,18 @@ import "./Header.css"
 import { VideoCallOutlined, Menu, Search, AppsOutlined, NotificationsOutlined, Mic } from "@mui/icons-material"
 import { Avatar } from "@mui/material"
 import {Link} from "react-router-dom"
+import { useDispatch } from "react-redux"
+import {toggler} from "../redux/sidebarToggler"
 
 function Header() {
 
   const [inputSearch, setInputSearch] = useState("")
+  const dispatch = useDispatch()
 
   return (
     <div className="header">
       <div className="header__left">
-        <Menu />
+          <Menu className="header__sidebarToggle" onClick={() => dispatch(toggler())} />
         <Link to="/">
         <img 
             className="header__logo" 
