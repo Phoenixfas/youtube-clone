@@ -18,14 +18,14 @@
 .videoSide__textMain > h4{
     font-weight: 400;
     margin: 17px 0px 13px;
-    font-size: large;
+    font-size: 1.3vw;
 }
 .videoSide__text{
     display: flex;
     justify-content: space-between;
 }
 .videoSide__text > p{
-    font-size: 14px;
+    font-size: 1vw;
     color: #606060;
 }
 .videoSide__icons{
@@ -35,9 +35,15 @@
 .videoSide_icon{
     display: flex;
     align-items: center;
-    width: 90px;
+    width: 7vw;
+    cursor: pointer;
+}
+.videoSide_iconIcon{
+    width: 1.5vw !important;
+    height: 1.5vw !important;
 }
 .videoSide_icon > span{
+    font-size: 1.2vw;
     margin-left: 5px;
 }
 .videoSide__channelRow{
@@ -45,7 +51,7 @@
     border-bottom: 1px solid lightgrey;
 }
 .videoSide__channelRow > p {
-    font-size: 14px;
+    font-size: 1vw;
     font-weight: 400;
     margin-left: 60px;
     color: #000;
@@ -68,7 +74,11 @@
     border-radius: 3px;
     color: #fff;
     font-size: 15px;
+    cursor: pointer;
 }
+.videoSide__sub.subscribed{
+    background-color: #e0e0e0;
+    color: black;}
 .videoSide__info{
     margin-left: 15px;
 }

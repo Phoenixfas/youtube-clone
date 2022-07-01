@@ -41,7 +41,7 @@ function Header() {
         <Avatar
             style={{width: "30px", height: "30px"}}
             alt="avatar"
-            src="https://yt3.ggpht.com/yti/APfAmoELzTgNXemZx1-cBnpHp4tMKV1lpyIwGPVNeP4k=s88-c-k-c0x00ffffff-no-rj-mo"
+            src="https://avatars.githubusercontent.com/u/72998972?v=4"
         />
       </div>
     </div>

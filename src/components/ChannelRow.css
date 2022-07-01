@@ -4,7 +4,6 @@
     height: 23vh;
 }
 .channelRow__text{
-    height: 20vh;
     display: flex;
     align-items: center;
 }
@@ -12,23 +11,25 @@
     flex: 0.97;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .channelRow__textMain > p{
     color: #606060;
-    font-size: 12px !important;
-    line-height: 17px;
+    font-size: 0.9vw !important;
+    line-height: 1.2vw;
     padding-right: 15px;
 }
 .channelRow__avatar{
-    width: 135px !important;
-    height: 135px !important;
-    margin: 4px 126px 13px 112px;
+    width: 10vw !important;
+    height: 10vw !important;
+    margin: 0px 9vw 0px 8vw;
+    align-self: center;
 }
 .channelRow__textMain > h4{
     display: flex;
     align-items: center;
-    font-size: 19px;
-    font-weight: 400;
+    font-size: 1.4vw;
+    font-weight: 500;
     margin-bottom: 10px;
 }
 .channelRow__subs{
@@ -36,8 +37,8 @@
 }
 .channelRow__verified{
     margin-left: 5px;
-    width: 15px !important;
-    height: 15px !important;
+    width: 1vw !important;
+    height: 1vw !important;
 }
 .channelRow__Subscribe{
     display: flex;
@@ -45,15 +46,20 @@
     justify-self: center;
 }
 .channelRow__Subscribe > p{
-    background-color: #e0e0e0;
+    background-color: #dd0000;
+    color: #fff;
     padding: 10px 15px;
     font-weight: 500;
     border-radius: 2px;
-    font-size: 14px;
+    font-size: 1vw;
+    cursor: pointer;
 }
+.channelRow__Subscribe.subscribed > p{
+    background-color: #e0e0e0;
+    color: black;}
 .channelRow__notifications{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px !important;
+    width: 3vw !important;
 }

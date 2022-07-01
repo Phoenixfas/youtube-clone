@@ -1,6 +1,6 @@
 .videoRow{
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .videoRow > img{
     object-fit: cover;
@@ -10,18 +10,18 @@
 .videoRow__text{
     margin-left: 14px;
 }
-.videoRow__text > h4{
-    font-size: large;
-    font-weight: 400;
+.videoRow__title{
+    font-size: 1.4vw !important;
+    font-weight: 500;
 }
 .videoRow__description{
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 0.9vw !important;
     color: #606060;
 }
 .videoRow__headline{
     margin-top: 5px;
-    font-size: 12px;
+    font-size: 0.9vw !important;
     color: #606060;
 }
 .videoRow_subsNumber{
@@ -47,10 +47,14 @@
     width: 25px !important;
 }
 .videoRow__name > p{
-    font-size: 13px;
+    font-size: 0.9vw !important;
     color: grey;
     margin-bottom: 3px;
 }
 .videoRow__name{
     margin-left: 12px;
+}
+.videoRow__link{
+    text-decoration: none;
+    color: black;
 }

@@ -9,27 +9,32 @@
 .relatedVideoSide__category > p {
     height: 7px;
 }
-.videoRow{
+.relatedVideoSide__videoRow{
     display: flex;
     align-items: flex-start;
-    height: 93px;
+    height: 15vh;
+    overflow-y: hidden;
+    margin-bottom: 7px;
 }
-.videoRow__video{
+.relatedVideoSide__videoRow__video{
     height: 100%;
 }
-.videoRow__video > img {
+.relatedVideoSide__videoRow__video > img {
     object-fit: cover;
-    width: 167px;
+    width: 12vw;
     height: 100%;
 }
-.videoRow__text > h4{
+.relatedVideoSide__videoRow__text{
+    margin-left: 7px;
+}
+.relatedVideoSide__videoRow__text > h4{
     color: #000;
-    font-size: 14px;
+    font-size: 1vw;
     font-weight: 400;
     margin-bottom: 5px;
 }
-.videoRow__text > p{
-    font-size: 12px;
+.relatedVideoSide__videoRow__text > p{
+    font-size: 0.9vw;
     color: #606060;
     line-height: 18px;
 }

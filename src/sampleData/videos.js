@@ -5,7 +5,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -24,7 +24,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -43,7 +43,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -62,7 +62,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -81,7 +81,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -100,7 +100,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -119,7 +119,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -138,7 +138,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -157,7 +157,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -176,7 +176,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -195,7 +195,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -214,7 +214,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -233,7 +233,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -252,7 +252,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -271,7 +271,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -290,7 +290,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -309,7 +309,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -328,7 +328,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -347,7 +347,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -366,7 +366,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -385,7 +385,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -404,7 +404,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -423,7 +423,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {
@@ -442,7 +442,7 @@ const videos = [
     },
     snippet: {
       title: "The Best of The Best",
-      channel: "TheBestOfTheBest",
+      channelTitle: "TheBestOfTheBest",
       publishedAt: "2020-01-01T00:00:00Z",
       thumbnails: {
         medium: {

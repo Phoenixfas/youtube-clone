@@ -4,26 +4,28 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
 import VideoPlayer from "./pages/VideoPlayer";
-// import { useEffect, useState } from "react";
-import videos from "./sampleData/videos";
+import { useEffect, useState } from "react";
+// import videos from "./sampleData/videos";
 
 function App() {
-  // const [videos, setVideos] = useState([]);
+  const [videos, setVideos] = useState([]);
 
-  // useEffect(() => {
-  //   fetch(
-  //     "https://youtube.googleapis.com/youtube/v3/search?part=snippet&contentDetails&statistics&channelId=UCydlocDyvRtFmMffKytKqgQ&maxResults=24&type=video&key=AIzaSyDSjpO42J6lBkm_IckY0tO0KXyY26SvTts",
-  //     {
-  //       method: "GET",
-  //       headers: {
-  //         Authorization: "AIzaSyDSjpO42J6lBkm_IckY0tO0KXyY26SvTts",
-  //         Accept: "application/json",
-  //       },
-  //     }
-  //   )
-  //     .then((res) => res.json())
-  //     .then((json) => setVideos(json.items));
-  // }, []);
+  useEffect(() => {
+    fetch(
+      "https://youtube.googleapis.com/youtube/v3/search?part=snippet&contentDetails&statistics&channelId=UCydlocDyvRtFmMffKytKqgQ&maxResults=24&type=video&key=AIzaSyDSjpO42J6lBkm_IckY0tO0KXyY26SvTts",
+      {
+        method: "GET",
+        headers: {
+          Authorization: "AIzaSyDSjpO42J6lBkm_IckY0tO0KXyY26SvTts",
+          Accept: "application/json",
+        },
+      }
+    )
+      .then((res) => res.json())
+      .then((json) => setVideos(json.items));
+  }, []);
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
 
   return (
     <div className="app">
@@ -32,13 +34,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home videos={videos} />} />
           <Route
-            path="/watch/:key/:title"
+            path="/watch/:id/:title/:view/:like/:date"
             element={<VideoPlayer videos={videos} />}
           />
           <Route
             path="/search/:searchTerm"
-            videos={videos}
-            element={<Search />}
+            element={<Search videos={videos} />}
           />
         </Routes>
       </Router>
