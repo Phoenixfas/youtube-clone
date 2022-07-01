@@ -1,7 +1,7 @@
 import "./VideoRow.css"
 import Avatar from "@mui/material/Avatar"
 import { useState, useEffect } from "react";
-// import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 function VideoRow({id, title, timestamp, channel, image, description, channelImage, date}) {
 
@@ -34,7 +34,7 @@ function VideoRow({id, title, timestamp, channel, image, description, channelIma
 
   return (
     <>
-      <a href={`/watch/${id}/${title}/${viewsCount}/${likesCount}/${date}`}  className="videoRow__link">
+      <Link to={`/watch/${id}/${title}/${viewsCount}/${likesCount}/${date}`}  className="videoRow__link">
         <div className="videoRow">
             <img src={image} alt="" />
             <div className="videoRow__text">
@@ -55,7 +55,7 @@ function VideoRow({id, title, timestamp, channel, image, description, channelIma
                 <p className="videoRow__description">{description}</p>
             </div>
         </div>
-      </a>
+      </Link>
     </>
   )
 }

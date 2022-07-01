@@ -26,9 +26,9 @@ function Header() {
       <div className="header__inputHolder">
         <div className="header__input">
           <input onChange={e => setInputSearch(e.target.value)} value={inputSearch} placeholder="Search" type="text" />
-          <Link to={`/search/${inputSearch}`} className="header__inputButton">
+          <a href={`/search/${inputSearch}`} className="header__inputButton">
             <Search className="header__inputButton_icon" />
-          </Link>
+          </a>
         </div>
         <div className="header__inputMic">
           <Mic className="header__inputMic_icon" />
